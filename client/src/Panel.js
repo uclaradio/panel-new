@@ -1,5 +1,5 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-import LoginPage from "./LoginPage";
+import LoginPage from "./LoginPage/LoginPage.js";
 
 function Panel() {
     const navigate = useNavigate();
@@ -7,7 +7,8 @@ function Panel() {
     return (
         <div>
             <Routes>
-                <Route path="/" element={<LoginPage />}/>
+                <Route path="/home" element={<LoginPage />}/>
+
             </Routes>
         </div>
     );
