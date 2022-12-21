@@ -3,10 +3,13 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import showRoutes from "./routes/shows.js";
+import songRoutes from "./routes/songs.js";
 
 const app = express();
 
-app.use("/shows", showRoutes);
+// figure out how to set a universal "/api" prefix
+app.use("/api/shows", showRoutes);
+app.use("/api/songs", songRoutes);
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
