@@ -1,6 +1,5 @@
 import React from "react";
-import styled, {css} from "styled-components";
-import Navbar from "./Navbar";
+import styled, { css } from "styled-components";
 
 // just did some test stuff with styled components here
 function FAQPage() {
@@ -12,7 +11,7 @@ function FAQPage() {
       padding: 0.25em 1em;
 
       ${props => props.primary &&
-              css`
+        css`
                 background: palevioletred;
                 color: white;
               `};
@@ -24,7 +23,6 @@ function FAQPage() {
 
     return (
         <div className="FAQPage">
-            <Navbar></Navbar>
             <Container>
                 <Button>Normal Button</Button>
                 <Button primary>Primary Button</Button>
