@@ -6,8 +6,8 @@ const showSchema = new Schema({
     graphic: String,
     hosts: [String],
     day: String,
-    time: Number,
-    genres: [String],
+    time: String,
+    tags: [String],
     instagram: String,
     spotify: String
 });

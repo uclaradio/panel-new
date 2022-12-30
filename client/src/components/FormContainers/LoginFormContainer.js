@@ -1,6 +1,6 @@
 import { StyledFormContainer } from "./style";
 
-const FormContainer = ({ children }) => {
+const LoginFormContainer = ({ children }) => {
     return (
         <StyledFormContainer>
             {children}
@@ -8,4 +8,4 @@ const FormContainer = ({ children }) => {
     );
 }
 
-export default FormContainer;
+export default LoginFormContainer;

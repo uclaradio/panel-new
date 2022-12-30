@@ -5,7 +5,7 @@ export const StyledNavbar = styled.nav`
   display: flex;
   align-items: center;
   width: 50%;
-  height: 55px;
+  height: 60px;
   padding: 0 10px;
   margin: 25px auto 15px;
   color: #777777;
@@ -14,11 +14,17 @@ export const StyledNavbar = styled.nav`
   border-radius: 5px;
 `;
 
-
+export const NavLogo = styled(Link)`
+  height: 50px;
+  
+  img {
+    height: inherit;
+  }
+`
 
 export const NavItemLink = styled(Link)`
   color: inherit;
-  margin-left: 16px;
+  margin-left: 25px;
 
   ${props => props.logout && css`
     color: red;

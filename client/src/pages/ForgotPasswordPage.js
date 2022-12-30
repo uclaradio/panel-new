@@ -1,5 +1,5 @@
 import { Page } from "../styles/Styles.style";
-import FormContainer from "../components/FormContainer";
+import { LoginFormContainer } from "../components/FormContainers";
 import InputGroup from "../components/InputGroup";
 import Input from "../components/Input";
 import Button from "../components/Button";
@@ -7,7 +7,7 @@ import Button from "../components/Button";
 const ForgotPasswordPage = () => {
     return (
         <Page lightblue>
-            <FormContainer>
+            <LoginFormContainer>
                 <h1>Reset Password</h1>
                 <h4>Enter the email associated with your account</h4>
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -18,7 +18,7 @@ const ForgotPasswordPage = () => {
 
                     <Button type="submit" full>Reset Password</Button>
                 </form>
-            </FormContainer>
+            </LoginFormContainer>
         </Page>
     );
 }

@@ -1,5 +1,5 @@
 import { Page, UnderlinedLink } from "../styles/Styles.style";
-import FormContainer from "../components/FormContainer"
+import { LoginFormContainer } from "../components/FormContainers"
 import InputGroup from "../components/InputGroup";
 import Input from "../components/Input";
 import Button from "../components/Button";
@@ -8,7 +8,7 @@ const LoginPage = () => {
     return (
         <Page lightblue>
             {/*<img style={{ width: "10%", height: "10%" }} src={RainbowGlobeLogo} alt="Rainbow Globe Logo"/>*/}
-            <FormContainer>
+            <LoginFormContainer>
                 <h1>Secret DJ Panel</h1>
                 <h3>Please log in with your account</h3>
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -28,7 +28,7 @@ const LoginPage = () => {
                     <UnderlinedLink to="forgot-password" paddingright="50">Forgot password?</UnderlinedLink>
                     <UnderlinedLink to="signup" paddingleft="50">Request an Account</UnderlinedLink>
                 </span>
-            </FormContainer>
+            </LoginFormContainer>
         </Page>
     );
 }

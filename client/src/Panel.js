@@ -13,7 +13,6 @@ function Panel() {
 
     return (
         <div>
-            {/*<Navbar />*/}
             <Routes>
                 <Route path="/" element={<LoginPage navigate={navigate}/>}/>
                 <Route path="/faq" element={<FAQPage/>}/>
