@@ -1,15 +1,21 @@
 import Navbar from "../components/Navbar";
-import { Page } from "../styles/Styles.style";
-import { HomeFormContainer } from "../components/FormContainers";
+import { Page, SideBySide } from "../styles/Styles.style";
+import Container from "../components/Container";
 
 const HomePage = () => {
     return (
         <Page>
             <Navbar/>
 
-            <HomeFormContainer>
+            <SideBySide>
+                <Container profile="true">
 
-            </HomeFormContainer>
+                </Container>
+
+                <Container shows="true">
+
+                </Container>
+            </SideBySide>
         </Page>
     )
 }

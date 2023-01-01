@@ -11,7 +11,7 @@ const Navbar = () => {
             </NavLogo>
             <NavItemLink to="/faq">FAQ</NavItemLink>
             <NavItemLink to="/elrond">Elrond</NavItemLink>
-            <NavItemLink to="/" logout>Log Out</NavItemLink>
+            <NavItemLink to="/" logout="true">Log Out</NavItemLink>
         </StyledNavbar>
     )
 }

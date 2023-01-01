@@ -29,6 +29,12 @@ export const Page = styled.div`
   background-color: ${props => props.lightblue ? '#e6ffff' : '#f1efef'};
 `;
 
+export const SideBySide = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+`;
+
 export const UnderlinedLink = styled(Link)`
   // This is kind of impractical but kind of cool
   padding-left: ${props => props.paddingleft ? props.paddingleft : 0}px;

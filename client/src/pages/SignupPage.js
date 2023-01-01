@@ -1,13 +1,13 @@
 import { Page } from "../styles/Styles.style";
-import { LoginFormContainer } from "../components/FormContainers";
 import InputGroup from "../components/InputGroup";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import Container from "../components/Container";
 
 const SignupPage = () => {
     return (
         <Page lightblue>
-            <LoginFormContainer>
+            <Container>
                 <h1>Request Account</h1>
                 <h5>Please fill out the forms below to request an account</h5>
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -28,7 +28,7 @@ const SignupPage = () => {
 
                     <Button type="submit" full>Request Account</Button>
                 </form>
-            </LoginFormContainer>
+            </Container>
         </Page>
     );
 }

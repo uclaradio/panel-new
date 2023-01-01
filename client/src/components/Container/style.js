@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const StyledFormContainer = styled.div`
+export const StyledContainer = styled.div`
   width: 100%;
-  max-width: 450px;
+  max-width: 465px;
   border-radius: 5px;
   padding: 40px 50px;
   margin: 60px auto 40px;
@@ -13,6 +13,11 @@ export const StyledFormContainer = styled.div`
   ${props => props.profile && css`
     margin-top: 10px;
     margin-left: 25%;
+  `}
+
+  ${props => props.shows && css`
+    margin-top: 10px;
+    margin-right: 25%;
   `}
   
   h1 {
