@@ -10,7 +10,7 @@ const Navbar = () => {
                 <img src={Logo} alt="Fun Box Logo"/>
             </NavLogo>
             <NavItemLink to="/faq">FAQ</NavItemLink>
-            <NavItemLink to="/elrond">Elrond</NavItemLink>
+            <NavItemLink to="/booth">Booth</NavItemLink>
             <NavItemLink to="/" logout="true">Log Out</NavItemLink>
         </StyledNavbar>
     )

@@ -6,7 +6,7 @@ import { GlobalStyle } from "./styles/Styles.style";
 const root = createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
-        <GlobalStyle />
+        <GlobalStyle/>
         <Panel/>
     </BrowserRouter>
 )

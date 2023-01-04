@@ -13,9 +13,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-size: 16px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neve',
-      sans-serif;
-    color: #333;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neve',
+    sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -35,11 +34,17 @@ export const SideBySide = styled.div`
   flex-direction: row;
 `;
 
+export const ProfilePicture = styled.img`
+  border-radius: 50%;
+  height: 128px;
+  margin-bottom: 15px;
+`;
+
 export const UnderlinedLink = styled(Link)`
   // This is kind of impractical but kind of cool
-  padding-left: ${props => props.paddingleft ? props.paddingleft : 0}px;
-  padding-right: ${props => props.paddingright ? props.paddingright : 0}px;
-  
+  padding-left: ${props => props.paddingleft || 0}px;
+  padding-right: ${props => props.paddingright || 0}px;
+
   &:hover {
     text-decoration: underline;
   }

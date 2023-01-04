@@ -1,5 +1,5 @@
 import { Page, UnderlinedLink } from "../styles/Styles.style";
-import InputGroup from "../components/InputGroup";
+import { InputGroup } from "../components/InputGroups";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Container from "../components/Container";
@@ -7,7 +7,6 @@ import Container from "../components/Container";
 const LoginPage = () => {
     return (
         <Page lightblue>
-            {/*<img style={{ width: "10%", height: "10%" }} src={RainbowGlobeLogo} alt="Rainbow Globe Logo"/>*/}
             <Container>
                 <h1>Secret DJ Panel</h1>
                 <h3>Please log in with your account</h3>

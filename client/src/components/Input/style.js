@@ -11,7 +11,7 @@ export const StyledInput = styled.input`
   transition: box-shadow 0.2s;
 
   &::placeholder {
-    color: #dedede;
+    color: #c4c4c4;
   }
 
   &:focus {

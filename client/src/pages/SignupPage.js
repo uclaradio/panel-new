@@ -1,5 +1,5 @@
 import { Page } from "../styles/Styles.style";
-import InputGroup from "../components/InputGroup";
+import { InputGroup } from "../components/InputGroups";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Container from "../components/Container";
