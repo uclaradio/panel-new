@@ -21,7 +21,7 @@ const LoginPage = () => {
                         <Input type="password" placeholder="Password" id="login-password"/>
                     </InputGroup>
 
-                    <Button type="submit" full>Log in</Button>
+                    <Button type="submit">Log in</Button>
                 </form>
                 <span>
                     <UnderlinedLink to="forgot-password" paddingright="50">Forgot password?</UnderlinedLink>

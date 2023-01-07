@@ -32,12 +32,21 @@ export const StyledInlineInputGroup = styled(StyledInputGroup)`
   input {
     margin-left: 16px;
     width: 100%;
-    border: none;
-    //pointer-events: none;
+    border: 1px solid #e6e6e6;
+    color: black;
 
     &::placeholder {
-      //color: black;
       font-style: italic;
     }
+    
+    &:disabled {
+      border: none;
+      background-color: white;
+    }
+  }
+  
+  .select {
+    margin-left: 16px;
+    width: 100%;
   }
 `;

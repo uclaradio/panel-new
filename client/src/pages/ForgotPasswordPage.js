@@ -16,7 +16,7 @@ const ForgotPasswordPage = () => {
                         <Input type="text" placeholder="name@email.com" id="login-email"/>
                     </InputGroup>
 
-                    <Button type="submit" full>Reset Password</Button>
+                    <Button type="submit">Reset Password</Button>
                 </form>
             </Container>
         </Page>

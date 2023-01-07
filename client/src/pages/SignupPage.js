@@ -26,7 +26,7 @@ const SignupPage = () => {
                         <Input type="password" id="login-password"/>
                     </InputGroup>
 
-                    <Button type="submit" full>Request Account</Button>
+                    <Button type="submit">Request Account</Button>
                 </form>
             </Container>
         </Page>
