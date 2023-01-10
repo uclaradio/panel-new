@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar";
-import { Page, ProfilePicture, SideBySide } from "../styles/Styles.style";
-import Container from "../components/Container";
+import { Page, ProfilePicture, SideBySide, Spacer } from "../styles/Styles.style";
+import { HomeContainer } from "../components/Containers";
 import { InlineInputGroup } from "../components/InputGroups";
 import Input from "../components/Input";
 import BoxLogo from "../assets/og_box_logo.jpg";
 import Select from "react-select";
 import { useState } from "react";
+import Button from "../components/Button";
 
 const HomePage = () => {
     const fullName = "Tomas Kaljevic";
@@ -48,7 +49,9 @@ const HomePage = () => {
         }
     };
 
-    const [editing, setEditing] = useState(true);
+    const [editing, setEditing] = useState(false);
+
+    const toggleEdit = () => setEditing(!editing);
 
     return (
         <Page>
@@ -56,7 +59,7 @@ const HomePage = () => {
 
             <SideBySide>
 
-                <Container profile="true">
+                <HomeContainer profile="true">
                     <h1>{fullName}</h1>
                     <ProfilePicture src={BoxLogo} alt="Box Logo"/>
 
@@ -87,15 +90,20 @@ const HomePage = () => {
                         <Input type="text" placeholder="Enter Bio" id="bio" disabled={!editing}/>
                     </InlineInputGroup>
 
-                    {/* isDisabled={true} or isDisabled={false}*/}
+                    {editing ?
+                        <>
+                            <Button type="button" onClick={toggleEdit}>Save</Button>
+                            <Spacer width="25px"/>
+                            <Button type="button" onClick={toggleEdit} cancelable>Cancel</Button>
+                        </> :
+                        <Button type="button" onClick={toggleEdit}>Edit</Button>}
+                </HomeContainer>
 
-                </Container>
-
-                <Container shows="true">
+                <HomeContainer shows="true">
                     <h1>Shows</h1>
 
-
-                </Container>
+                    <Button>Add Show</Button>
+                </HomeContainer>
 
             </SideBySide>
         </Page>

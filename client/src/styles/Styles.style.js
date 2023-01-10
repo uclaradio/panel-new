@@ -25,7 +25,7 @@ export const Page = styled.div`
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  background-color: ${props => props.lightblue ? '#e6ffff' : '#f1efef'};
+  background-color: ${props => props.lightblue ? "#e6ffff" : "#f1efef"};
 `;
 
 export const SideBySide = styled.div`
@@ -41,11 +41,13 @@ export const ProfilePicture = styled.img`
 `;
 
 export const UnderlinedLink = styled(Link)`
-  // This is kind of impractical but kind of cool
-  padding-left: ${props => props.paddingleft || 0}px;
-  padding-right: ${props => props.paddingright || 0}px;
-
   &:hover {
     text-decoration: underline;
   }
+`;
+
+export const Spacer = styled.div`
+  width: ${props => props.width || "0px"};
+  height: auto;
+  display: inline-block;
 `;

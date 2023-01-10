@@ -1,13 +1,13 @@
-import { Page, UnderlinedLink } from "../styles/Styles.style";
+import { Page, Spacer, UnderlinedLink } from "../styles/Styles.style";
 import { InputGroup } from "../components/InputGroups";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import Container from "../components/Container";
+import { LoginContainer } from "../components/Containers";
 
 const LoginPage = () => {
     return (
         <Page lightblue>
-            <Container>
+            <LoginContainer>
                 <h1>Secret DJ Panel</h1>
                 <h3>Please log in with your account</h3>
                 <form onSubmit={(e) => e.preventDefault()}>
@@ -24,10 +24,11 @@ const LoginPage = () => {
                     <Button type="submit">Log in</Button>
                 </form>
                 <span>
-                    <UnderlinedLink to="forgot-password" paddingright="50">Forgot password?</UnderlinedLink>
-                    <UnderlinedLink to="signup" paddingleft="50">Request an Account</UnderlinedLink>
+                    <UnderlinedLink to="forgot-password">Forgot password?</UnderlinedLink>
+                    <Spacer width="100px"/>
+                    <UnderlinedLink to="signup">Request an Account</UnderlinedLink>
                 </span>
-            </Container>
+            </LoginContainer>
         </Page>
     );
 }

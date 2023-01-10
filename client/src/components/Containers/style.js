@@ -11,7 +11,6 @@ export const StyledContainer = styled.div`
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   text-align: center;
 
-
   h1 {
     font-weight: 500;
     margin-bottom: 5px;
@@ -29,19 +28,20 @@ export const StyledContainer = styled.div`
     color: #888888;
     font-size: 14px;
   }
+`;
 
-  // should probably separate this into two different containers,
-  // it's getting kind of ugly
-  
-  ${props => (props.profile || props.shows) && css`
-    margin-top: 10px;
-    //padding-bottom: 5px;
-    padding: 20px 25px 5px;
+export const StyledHomeContainer = styled(StyledContainer)`
+  margin-top: 10px;
+  padding: 20px 25px 5px;
 
-    h1 {
-      margin-bottom: 10px;
-    }
-  `}
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: fit-content;
+    margin-bottom: 5px;
+  }
 
   ${props => props.profile && css`
     margin-left: 25%;
@@ -50,4 +50,4 @@ export const StyledContainer = styled.div`
   ${props => props.shows && css`
     margin-right: 25%;
   `}
-`;
+`

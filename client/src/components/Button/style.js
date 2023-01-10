@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  width: ${props => props.width || '100%'};
+  width: 100%;
   min-width: 64px;
   border: 0;
   border-radius: 4px;
   padding: 8px 16px;
   outline: none;
-  background-color: #2f8bfd;
+  background-color: ${props => props.cancelable ? "#ed5e68" : "#2f8bfd"};
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 500;
@@ -17,6 +17,6 @@ export const StyledButton = styled.button`
   transition: all 0.2s;
 
   &:hover {
-    background-color: #0072ff
+    background-color: ${props => props.cancelable ? "#d04c55" : "#0072ff"};
   }
 `;
