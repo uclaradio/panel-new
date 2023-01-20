@@ -20,6 +20,7 @@ export const StyledInlineInputGroup = styled(StyledInputGroup)`
   flex-direction: row;
   align-items: center;
   margin-bottom: 10px;
+  //overflow: hidden;
 
   label {
     width: 150px;
@@ -27,13 +28,15 @@ export const StyledInlineInputGroup = styled(StyledInputGroup)`
     white-space: nowrap;
     padding-right: 4px;
     font-weight: bold;
+    font-size: 15px;
   }
 
   input {
     margin-left: 16px;
-    width: 100%;
     border: 1px solid #e6e6e6;
     color: black;
+    width: 70%;
+    font-size: 15px;
 
     &::placeholder {
       font-style: italic;
@@ -46,7 +49,7 @@ export const StyledInlineInputGroup = styled(StyledInputGroup)`
   }
   
   .select {
-    margin-left: 16px;
-    width: 100%;
+    margin-left: 13.5px;
+    width: 70%;
   }
 `;

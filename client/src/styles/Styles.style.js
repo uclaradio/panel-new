@@ -22,21 +22,24 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Page = styled.div`
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   background-color: ${props => props.lightblue ? "#e6ffff" : "#f1efef"};
 `;
 
 export const SideBySide = styled.div`
-  width: 100%;
+  width: ${props => props.width || "100%"};
   display: flex;
   flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  gap: ${props => props.gap || "25px"};
 `;
 
 export const ProfilePicture = styled.img`
   border-radius: 50%;
-  height: 128px;
+  max-width: 35%;
   margin-bottom: 15px;
 `;
 

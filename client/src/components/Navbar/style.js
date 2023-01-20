@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 export const StyledNavbar = styled.nav`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   width: 50%;
   height: 60px;
@@ -31,8 +31,4 @@ export const NavItemLink = styled(Link)`
     margin-left: auto;
     margin-right: 16px;
   `};
-
-  //&:hover {
-  //  text-decoration: underline;
-  //}
 `;

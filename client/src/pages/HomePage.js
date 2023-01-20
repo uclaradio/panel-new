@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import { Page, ProfilePicture, SideBySide, Spacer } from "../styles/Styles.style";
+import { Page, ProfilePicture, SideBySide } from "../styles/Styles.style";
 import { HomeContainer } from "../components/Containers";
 import { InlineInputGroup } from "../components/InputGroups";
 import Input from "../components/Input";
@@ -36,7 +36,7 @@ const HomePage = () => {
             return {
                 ...defaultStyles,
                 color: "#c4c4c4",
-                fontSize: "17px",
+                fontSize: "16px",
                 fontStyle: "italic"
             }
         },
@@ -75,7 +75,8 @@ const HomePage = () => {
 
                     <InlineInputGroup>
                         <label htmlFor="departments">Departments</label>
-                        <Select className="select" options={departments} placeholder="Add Department" styles={styles}
+                        <Select className="select" options={departments} placeholder="Add Department"
+                                styles={styles}
                                 isMulti isDisabled={!editing}/>
                     </InlineInputGroup>
 
@@ -91,11 +92,10 @@ const HomePage = () => {
                     </InlineInputGroup>
 
                     {editing ?
-                        <>
+                        <SideBySide width="fit-content">
                             <Button type="button" onClick={toggleEdit}>Save</Button>
-                            <Spacer width="25px"/>
                             <Button type="button" onClick={toggleEdit} cancelable>Cancel</Button>
-                        </> :
+                        </SideBySide> :
                         <Button type="button" onClick={toggleEdit}>Edit</Button>}
                 </HomeContainer>
 

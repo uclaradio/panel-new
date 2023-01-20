@@ -25,7 +25,7 @@ const LoginPage = () => {
                 </form>
                 <span>
                     <UnderlinedLink to="forgot-password">Forgot password?</UnderlinedLink>
-                    <Spacer width="100px"/>
+                    <Spacer width="125px"/>
                     <UnderlinedLink to="signup">Request an Account</UnderlinedLink>
                 </span>
             </LoginContainer>

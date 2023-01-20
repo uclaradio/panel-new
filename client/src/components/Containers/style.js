@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 
 export const StyledContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   max-width: 465px;
@@ -28,9 +30,15 @@ export const StyledContainer = styled.div`
     color: #888888;
     font-size: 14px;
   }
+  
+  img, button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const StyledHomeContainer = styled(StyledContainer)`
+  max-width: 25%;
   margin-top: 10px;
   padding: 20px 25px 5px;
 
